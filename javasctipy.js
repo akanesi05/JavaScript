@@ -4,3 +4,11 @@
     for (let i = 0; i < 3; i++) {
         console.log(i)
       }
+      const item = {
+        product: 'Smartphone',
+        price: 600
+      }
+      
+      
+      console.log(item.product)
+      
