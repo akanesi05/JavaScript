@@ -49,3 +49,24 @@ switch (式){
 
 // ４、いずれの値とも一致しなかった場合はdefaultの後に記述されている処理を実行する。
 // （defaultは省略可能。）
+// for文：
+for (let i = 0; i < 3; i++) {
+  console.log(i)
+}
+/* 実行結果
+  0
+  1
+  2
+*/
+
+// while文：
+let index = 0
+while(index < 3) {
+  console.log(index)
+  index++
+}
+/* 実行結果
+  0
+  1
+  2
+*/
