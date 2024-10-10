@@ -18,3 +18,16 @@ prefectures.forEach((prefecture) => {
   console.log(prefecture)
   
 })
+//mapメソッドは呼び出し元の配列の各要素に対して処理を行い、新しい配列を作ります。
+
+//コールバック関数は他の関数に引数として渡される関数 関数runTwiceの引数に関数greetを渡す
+const greet = () => {
+    console.log('Hello world!')
+  }
+  
+  const runTwice = (func) => {
+    func()
+    func()
+  }
+  
+  runTwice(greet) 
