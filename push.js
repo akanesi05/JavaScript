@@ -31,3 +31,6 @@ const greet = () => {
   }
   
   runTwice(greet) 
+
+const sampleUrl = 'https://jsonplaceholder.typicode.com/users'
+const sample = fetch(sampleUrl) // ユーザーの一覧情報を含むデータを取得
