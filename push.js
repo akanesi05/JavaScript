@@ -51,8 +51,8 @@ const includesArray = (array) => {
 }
 console.log(includesArray(greeting2))
 
-const getUsersUrl = 'https://jsonplaceholder.typicode.com/users'
-const response = fetch(getUsersUrl)
+// const getUsersUrl = 'https://jsonplaceholder.typicode.com/users'
+// const response = fetch(getUsersUrl)
 console.log(response)
 const myName = 'Mike'
 console.log(`私の名前は${myName}です`) // 私の名前はMikeです
@@ -81,3 +81,11 @@ const getPostList = async () => {
   console.log(postList)
   // ここまで
 }
+// 2桁の数字を表す正規表現
+const regexp = new RegExp('[0-9]{2}')
+// ひらがなもしくは小文字のアルファベット3文字から4文字を表す正規表現
+const regexp2 = new RegExp('[ぁ-んa-z]{3,4}')
+// 090-1234-5678のような携帯の電話番号を表す正規表現
+const regexp3 = new RegExp('[0-9]{3}-[0-9]{4}-[0-9]{4}')
+// 2つの小文字のアルファベットからなる文字列をグローバルに検索する正規表現
+const regexp4 = new RegExp('[a-z]{2}', 'g')
