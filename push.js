@@ -32,11 +32,12 @@ const greet = () => {
   
   runTwice(greet) 
 
+
   const getUsersUrl = 'https://jsonplaceholder.typicode.com/users'
   const response = fetch(getUsersUrl)
   console.log(response)
 
-  const prices = [1000, 2000, 3000, 4000]
+const prices = [1000, 2000, 3000, 4000]
 const found = prices.find((price) => price >= 2500)
 console.log(found) // 3000
 const array = [4, 9, 13, 20, 25]
@@ -49,3 +50,34 @@ const includesArray = (array) => {
   return array.includes('ありがとう')
 }
 console.log(includesArray(greeting2))
+
+const getUsersUrl = 'https://jsonplaceholder.typicode.com/users'
+const response = fetch(getUsersUrl)
+console.log(response)
+const myName = 'Mike'
+console.log(`私の名前は${myName}です`) // 私の名前はMikeです
+const url = 'https://jsonplaceholder.typicode.com/users/1'
+
+const getUser = async () => {
+  // 2秒待機する
+  await new Promise(resolve => setTimeout(resolve, 2000))
+  // ユーザの情報を取得してuserDataに格納する
+  const response = await fetch(url)
+  const userData = await response.json()
+  console.log(userData)
+}
+
+const sampleFunction = async () => {
+  getUser()
+  console.log('情報を取得しました')
+}
+
+sampleFunction()
+const getPostUrl = 'https://jsonplaceholder.typicode.com/posts'
+const getPostList = async () => {
+  // ここから
+  const response = await fetch(getPostUrl)
+  const postList = await response.json()
+  console.log(postList)
+  // ここまで
+}
