@@ -89,3 +89,15 @@ const regexp2 = new RegExp('[ぁ-んa-z]{3,4}')
 const regexp3 = new RegExp('[0-9]{3}-[0-9]{4}-[0-9]{4}')
 // 2つの小文字のアルファベットからなる文字列をグローバルに検索する正規表現
 const regexp4 = new RegExp('[a-z]{2}', 'g')
+
+
+fruits = ['apple', 'orange', 'banana'];
+console.log(fruits);
+fruits.push('strawberry');
+console.log(fruits);
+//["apple", "orange", "banana", "strawberry"]
+
+fruits = ['apple', 'orange', 'banana'];
+console.log(fruits);
+fruits.pop(fruits);
+console.log(fruits);
