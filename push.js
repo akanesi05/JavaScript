@@ -97,16 +97,20 @@ fruits.push('strawberry');
 console.log(fruits);
 //["apple", "orange", "banana", "strawberry"]
 
-fruits = ['apple', 'orange', 'banana'];
-console.log(fruits);
-fruits.pop(fruits);
-console.log(fruits);
-const prices = [1000, 2000, 3000, 4000]
-const newprices = prices.slice(1,-2) // 0番目から4つ目を切り抜く
-　　　　　　　   // (第2引数は省略可能)
-console.log(newprices) // [1000]
-const numbers = [1, 2, 3, 4, 5];
-numbers.forEach(function(number) {
-  console.log(number);
-});
+// fruits = ['apple', 'orange', 'banana'];
+// console.log(fruits);
+// fruits.pop(fruits);
+// console.log(fruits);
+// const prices = [1000, 2000, 3000, 4000]
+// const newprices = prices.slice(1,-2) // 0番目から4つ目を切り抜く
+// // (第2引数は省略可能)
+// console.log(newprices) // [1000]
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.forEach(function(number) {
+//   console.log(number);
+// });
 //このコードでは、配列numbersの各要素を順番に取り出し、それぞれをnumberという変数に格納してから、console.logによって出力します。出力結果は以下の通りです。
+
+setTimeout(() => {
+  console.log("５秒立ちました") 
+} ,5000) // よばれて５秒後にconsoleにメッセージが出力される
