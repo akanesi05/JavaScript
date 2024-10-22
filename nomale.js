@@ -127,3 +127,22 @@ const arr7 = ["りんご", "みかん", "いちご"];
 const answer4 = arr.slice(1,3);
 
 console.log(answer4)
+
+const fruits = [ "apple", "orange", "grape"];
+
+const answer6 = fruits.forEach(fruit => { console.log(fruit) })
+
+const numbers = [1, 2, 3]
+const doubleNumbers = numbers.map(number => {
+  return number * 2
+})
+console.log(doubleNumbers) // [2, 4, 6]
+
+const data = {
+  id: 107,
+  name: 'Bob',
+  job: 'programmer',
+}
+
+const keys = Object.keys(data);
+console.log(keys);
