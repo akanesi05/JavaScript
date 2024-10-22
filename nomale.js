@@ -71,3 +71,59 @@ const answer2 = (arr) => {
     return arr.join(",")
 }
 console.log(answer2(arr)) // apple, orange, melon
+
+const object1 = {name: "Bob", "age": 20};
+console.log(object1.name)
+
+const object = {name: "Bob", "age": 20};
+
+const getObjectName = object => object.name;
+
+console.log(getObjectName(object));
+
+const library = {
+    book: {
+       author: "Tom Sawyer",
+       year: "11/12/2021"
+     }
+  }
+  
+  library.book.year = "10/22/1876";
+
+  const plusAge =(obj) => { 
+    obj.age++
+    return obj
+    }
+    
+    console.log(plusAge(object));
+
+    const arr1 = ["りんご","みかん","いちご"];
+    arr.push('すいか');
+    
+    console.log(arr1)
+
+    const arr2 = ["りんご","みかん","いちご"];
+  // ここに処理を書いてください。
+arr2.pop(-1)
+
+console.log(arr2)
+
+const arr3 = ["りんご","みかん","いちご"];
+arr.unshift("すいか");
+console.log(arr3)
+
+
+const arr4 = ["りんご","みかん","いちご"];
+  console.log(arr4.indexOf("みかん")) 
+
+
+
+const arr5= ["りんご", "みかん", "いちご"];
+
+const answer3 = arr5.includes("りんご");
+console.log(answer3)
+
+const arr7 = ["りんご", "みかん", "いちご"];
+const answer4 = arr.slice(1,3);
+
+console.log(answer4)
