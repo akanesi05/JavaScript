@@ -146,3 +146,7 @@ const data = {
 
 const keys = Object.keys(data);
 console.log(keys);
+function 関数名 (仮引数1, 仮引数2) {実行処理}
+double( 5 ) // 実行結果:  10
+function double(num){  console.log( num * 2) }
+// 関数宣言のため、エラーとならず呼び出せる
