@@ -155,3 +155,6 @@ const func2 = (str) => {
   return str;
 };
 console.log(func2("func2です"));
+
+const func3 = str => str;
+console.log(func3("func2です"));
