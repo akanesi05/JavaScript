@@ -16,3 +16,12 @@ function oldFunc(value) {
     return value
   }
   console.log(newFunc('新しい記法です'))
+
+  // 配列の定義
+const arr = ['ハンバーガー', 'ポテト', 'ナゲット']
+
+// mapを使った配列処理
+const arr2 = arr.map((food) => food)
+
+//出力
+console.log(arr2) // ['ハンバーガー', 'ポテト', 'ナゲット']
