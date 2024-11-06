@@ -25,3 +25,5 @@ const arr2 = arr.map((food) => food)
 
 //出力
 console.log(arr2) // ['ハンバーガー', 'ポテト', 'ナゲット']
+
+
