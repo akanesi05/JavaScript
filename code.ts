@@ -19,3 +19,12 @@ let str: string = "A";
 //Array 配列
 let arr1: Array<number> = [0, 1.2];
 let arr2: number[]=[0,1,2]
+
+const score = 60
+const promiseFunction = () => {
+  return new Promise((resolve) => {
+    if (80 <= score) {
+      resolve('80点以上です')
+    }
+  })
+}
