@@ -28,3 +28,9 @@ const promiseFunction = () => {
     }
   })
 }
+
+const getName = (lastName) => {
+    return `私の名前は${lastName}です`
+  }
+  
+  console.log(getName('田中')) 
